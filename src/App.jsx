@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import TerenuriList from './components/TerenuriList';
 import TerenForm from './components/TerenForm';
 import RegisterForm from './components/RegisterForm';
-import RezervariForm from './components/RezervariForm';
+import RezervariPage from './pages/RezervariPage';
 function App() {
   return (
     <Router>
