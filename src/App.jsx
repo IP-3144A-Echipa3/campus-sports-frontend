@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import TerenuriList from './components/TerenuriList';
 import TerenForm from './components/TerenForm';
 import RegisterForm from './components/RegisterForm';
-import RezervariPage from './pages/RezervariPage';
-
+import RezervariForm from './components/RezervariForm';
 function App() {
   return (
     <Router>
@@ -19,7 +18,6 @@ function App() {
           </nav>
           {/* TODO: Integrate Navbar component here */}
         </header>
-
         <main style={{ padding: '0 20px' }}>
           <Routes>
             <Route path="/" element={<TerenuriList />} />
@@ -33,5 +31,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
