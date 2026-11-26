@@ -1,0 +1,1090 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #0f172a;
+  width: 100%;
+  background: #f4f6f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.cs-app {
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #0f172a;
+}
+
+.cs-topbar {
+  position: relative;
+  display: flex;
+  min-height: 55px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 28px;
+  border-bottom: 1px solid #e6eaf0;
+  background: #fff;
+}
+
+.cs-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 0;
+  background: transparent;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cs-brand-mark {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cs-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-nav-link {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cs-nav-link.is-active {
+  background: #eef2ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cs-account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cs-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+
+.cs-sign-out {
+  padding: 4px 0 4px 4px;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.cs-main {
+  width: 100%;
+  padding: 24px 28px;
+}
+
+.cs-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cs-page-title-row,
+.cs-notifications-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cs-page-heading {
+  margin: 0;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cs-page-subtitle {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.cs-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #e7f8ef;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cs-live-dot,
+.cs-status-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.cs-filters {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.cs-filter-input {
+  min-width: 0;
+  height: 36px;
+  padding: 0 13px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #475569;
+  font-size: 13px;
+}
+
+.cs-filter-input:focus,
+.cs-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 12%);
+}
+
+.cs-search {
+  flex: 1;
+}
+
+.cs-facility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cs-facility-card,
+.cs-booking-summary,
+.cs-notifications-panel,
+.cs-reservation-row,
+.cs-empty-card {
+  border: 1px solid #edf1f6;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.cs-facility-card {
+  padding: 14px;
+}
+
+.cs-facility-image {
+  height: 120px;
+  border-radius: 10px;
+  background: #e9edf2;
+}
+
+.cs-facility-title {
+  margin: 10px 0 0;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.cs-facility-status {
+  margin-top: 10px;
+}
+
+.cs-status {
+  display: inline-flex;
+  min-height: 23px;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  white-space: nowrap;
+}
+
+.cs-status-success {
+  background: #e7f8ef;
+  color: #15803d;
+}
+
+.cs-status-success .cs-status-dot {
+  background: #22c55e;
+}
+
+.cs-status-warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.cs-status-warning .cs-status-dot {
+  background: #f59e0b;
+}
+
+.cs-status-danger {
+  background: #feecec;
+  color: #b91c1c;
+}
+
+.cs-status-danger .cs-status-dot {
+  background: #ef4444;
+}
+
+.cs-facility-availability {
+  min-height: 15px;
+  margin: 10px 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.cs-button {
+  display: inline-flex;
+  min-height: 43px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    color 120ms ease;
+}
+
+.cs-button-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.cs-button-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.cs-button-secondary {
+  border-color: #e2e8f0;
+  background: #fff;
+  color: #475569;
+}
+
+.cs-button-secondary:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.cs-facility-card > .cs-button {
+  width: 100%;
+}
+
+.cs-button-small {
+  min-height: 33px;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cs-back-link,
+.cs-inline-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cs-back-link:hover,
+.cs-inline-link {
+  color: #2563eb;
+}
+
+.cs-booking-facility {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.cs-facility-thumbnail {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 9px;
+  background: #e9edf2;
+}
+
+.cs-booking-facility > .cs-facility-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.cs-booking-facility-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.cs-booking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: start;
+  gap: 20px;
+}
+
+.cs-date-picker {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.cs-date-option {
+  display: flex;
+  min-height: 55px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+}
+
+.cs-date-option span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.cs-date-option strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cs-date-option.is-selected {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #fff;
+}
+
+.cs-date-option.is-selected span {
+  color: #cbd5e1;
+}
+
+.cs-slot-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 14px 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.cs-slot-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-legend-box {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.cs-legend-box.is-busy {
+  background: #e5e7eb;
+}
+
+.cs-legend-box.is-waiting {
+  border-color: #fde68a;
+  background: #fde68a;
+}
+
+.cs-legend-box.is-selected {
+  border-color: #0f172a;
+  background: #0f172a;
+}
+
+.cs-section-heading,
+.cs-summary-heading {
+  margin: 0 0 14px;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cs-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cs-slot {
+  display: flex;
+  min-height: 62px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  text-align: left;
+}
+
+.cs-slot strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cs-slot span {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.cs-slot.is-busy {
+  border-color: #f1f5f9;
+  background: #f3f4f6;
+  color: #9ca3af;
+}
+
+.cs-slot.is-busy span {
+  color: #9ca3af;
+}
+
+.cs-slot.is-waiting {
+  border-color: #fde8b5;
+  background: #fef6e0;
+  color: #92400e;
+}
+
+.cs-slot.is-waiting span {
+  color: #b45309;
+}
+
+.cs-slot.is-selected {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #fff;
+}
+
+.cs-slot.is-selected span {
+  color: #cbd5e1;
+}
+
+.cs-booking-summary {
+  padding: 17px;
+}
+
+.cs-summary-heading {
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.cs-details {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.cs-detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.cs-detail-row dt {
+  color: #64748b;
+}
+
+.cs-detail-row dd {
+  margin: 0;
+  color: #0f172a;
+  font-weight: 600;
+  text-align: right;
+}
+
+.cs-booking-rule {
+  margin: 14px 0;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.cs-full-width {
+  width: 100%;
+}
+
+.cs-waitlist-button {
+  margin-top: 12px;
+}
+
+.cs-action-error,
+.cs-error {
+  color: #b91c1c;
+}
+
+.cs-action-error {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+
+.cs-confirmation-page {
+  display: flex;
+  min-height: calc(100vh - 103px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cs-confirmation-card {
+  width: min(430px, 100%);
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.cs-confirmation-mark {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cs-confirmation-mark.is-waiting {
+  background: #f59e0b;
+}
+
+.cs-confirmation-title {
+  margin: 12px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cs-confirmation-copy {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.cs-waiting-pill {
+  width: fit-content;
+  margin: 14px auto;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cs-confirmation-details {
+  margin: 16px 0;
+  padding: 16px 0;
+  border-top: 1px solid #eef1f5;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.cs-confirmation-secondary {
+  margin-top: 12px;
+}
+
+.cs-waiting-note {
+  display: grid;
+  width: min(430px, 100%);
+  gap: 6px;
+  padding: 14px 15px;
+  border: 1px solid #fce3ae;
+  border-radius: 12px;
+  background: #fff7e6;
+  color: #9a6b1e;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.cs-waiting-note strong {
+  color: #92400e;
+  font-size: 13px;
+}
+
+.cs-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.cs-tab {
+  min-height: 34px;
+  padding: 0 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #fff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cs-tab.is-active {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #fff;
+}
+
+.cs-reservations-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  align-items: start;
+  gap: 20px;
+}
+
+.cs-reservation-list {
+  display: grid;
+  gap: 10px;
+}
+
+.cs-reservation-row {
+  display: flex;
+  min-height: 66px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+}
+
+.cs-reservation-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.cs-reservation-copy h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cs-reservation-copy p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.cs-reservation-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-notifications-panel {
+  padding: 17px;
+}
+
+.cs-notifications-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cs-notifications-heading h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cs-new-count {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cs-notification-list {
+  display: grid;
+  gap: 14px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cs-notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cs-notification-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.cs-notification-dot.is-blue {
+  background: #2563eb;
+}
+
+.cs-notification-dot.is-green {
+  background: #16a34a;
+}
+
+.cs-notification-dot.is-amber {
+  background: #f59e0b;
+}
+
+.cs-notification-dot.is-muted {
+  background: #94a3b8;
+}
+
+.cs-notification-item p {
+  margin: 0;
+  color: #1e293b;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cs-notification-item time {
+  display: block;
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.cs-notification-button {
+  display: grid;
+  gap: 3px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #1e293b;
+  text-align: left;
+}
+
+.cs-notification-button span {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cs-notification-button time {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.cs-notifications-page-panel {
+  max-width: 720px;
+  margin-top: 18px;
+}
+
+.cs-empty-card,
+.cs-empty-state,
+.cs-message {
+  padding: 16px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.cs-empty-card {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+}
+
+.cs-inline-link {
+  font-size: 13px;
+}
+
+.cs-message {
+  padding: 8px 0;
+}
+
+.cs-auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 20px;
+  background: #eef1f6;
+}
+
+.cs-auth-card {
+  width: min(420px, 100%);
+  padding: 36px 32px 28px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgb(15 23 42 / 5%);
+}
+
+.cs-login-mark {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: 14px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cs-login-title {
+  margin: 16px 0 0;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+  text-align: center;
+}
+
+.cs-login-subtitle {
+  margin: 12px 0 28px;
+  color: #64748b;
+  font-size: 13px;
+  text-align: center;
+}
+
+.cs-login-form {
+  display: grid;
+}
+
+.cs-field-label {
+  margin: 0 0 6px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cs-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 0 13px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 13px;
+}
+
+.cs-input::placeholder {
+  color: #94a3b8;
+}
+
+.cs-forgot-link {
+  justify-self: end;
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cs-form-error {
+  min-height: 0;
+  margin: 0 0 8px;
+  color: #b91c1c;
+  font-size: 12px;
+}
+
+.cs-login-submit {
+  width: 100%;
+}
+
+.cs-login-footnote {
+  margin: 16px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+  text-align: center;
+}
+
+.cs-text-button {
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.cs-account-toggle {
+  display: block;
+  margin: 12px auto 0;
+}
+
+@media (max-width: 900px) {
+  .cs-facility-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cs-booking-layout,
+  .cs-reservations-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cs-booking-summary,
+  .cs-notifications-panel {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .cs-topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .cs-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cs-account {
+    margin-left: auto;
+  }
+
+  .cs-main {
+    padding: 20px 16px;
+  }
+
+  .cs-filters {
+    flex-direction: column;
+  }
+
+  .cs-filter-input {
+    width: 100%;
+  }
+
+  .cs-facility-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cs-booking-facility {
+    flex-wrap: wrap;
+  }
+
+  .cs-booking-facility-copy {
+    flex-basis: calc(100% - 76px);
+  }
+
+  .cs-booking-facility > .cs-status {
+    margin-left: 74px;
+  }
+
+  .cs-date-picker {
+    gap: 4px;
+  }
+
+  .cs-date-option {
+    min-height: 50px;
+  }
+
+  .cs-slot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cs-reservation-row {
+    flex-wrap: wrap;
+  }
+
+  .cs-reservation-actions {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 52px;
+  }
+
+  .cs-auth-card {
+    padding: 30px 24px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
