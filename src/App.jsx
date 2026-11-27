@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import api from "./services/api";
 import { LoginPage } from "./pages/LoginPage";
+import { ConfirmationPage } from "./pages/ConfirmationPage";
+import { ReservationsPage } from "./pages/ReservationsPage";
 import { AppShell } from "./components/AppShell";
 import TerenForm from "./components/TerenForm";
 
